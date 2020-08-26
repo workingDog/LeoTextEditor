@@ -49,7 +49,7 @@ struct LeoToolbarSimple: View {
                 textColorButton
                 highlighter
             }.buttonStyle(GrayButtonStyle(w: sx+5, h: sx+5))
-        }.frame(width: 350 + d, height: 65)
+        }.frame(width: 350 + d)
     }
     
     var textFormats: some View {

@@ -37,7 +37,8 @@ struct HighlightDropDown: View {
                 if expand {onSelection()}
                 if !expand {onDeselection()}
             }) {
-                Image(systemName: "paintbrush").resizable().frame(width: sx, height: sx).foregroundColor(color)
+                Image(systemName: "paintbrush").resizable().frame(width: sx, height: sx)
+                    .foregroundColor(expand ? .red : color)
             }.buttonStyle(GrayButtonStyle(w: sx+5, h: sx+5))
             
             GeometryReader { geo in

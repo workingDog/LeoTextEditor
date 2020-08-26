@@ -15,7 +15,7 @@ struct LeoTextEditor: View {
     let height: CGFloat
     
     // true for a simple toolbar, false for a more advanced toolbar
-    let simple = false
+    let simple = true
     
     let sx = CGFloat(20)
     // adjusting for iPhone and iPad/mac

@@ -11,7 +11,7 @@
 The idea is to have a text editor with **attributed text** that can be used easily in SwiftUI. So I started modifying [LEOTextView](https://github.com/tuesleep/LEOTextView) to see if it can be done. 
 
 The changes include, wrapping LEOTextView for use in SwiftUI, and a new toolbar. 
-There are in fact, two toolbar types to choose from. A default simple toolbar and a more advanced one. 
+There are in fact, two toolbars to choose from. A default simple toolbar and a more advanced one. 
 
 
 ## Usage

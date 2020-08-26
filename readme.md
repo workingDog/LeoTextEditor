@@ -16,7 +16,7 @@ There are in fact, two toolbars to choose from. A default simple toolbar and a m
 
 ## Usage
 
-The main element is **LeoTextEditor** as showned in the example below. 
+The main element is **LeoTextEditor** as shown in the example below. 
 It takes a string binding, the size of the editor frame, and the toolbar type. See *ContentView* for an example use.
 
 The *text* passed into the **LeoTextEditor** consists of a json string that describes the text and all its attributes. Such as:

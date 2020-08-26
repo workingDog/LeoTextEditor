@@ -61,7 +61,7 @@ struct LeoToolbarSimple: View {
                 bullet = false
                 number = false
             }) {
-                Text("- dash").font(.caption).foregroundColor(color)
+                Text("- dash").font(.caption).foregroundColor(dash ? .red : color)
             }
             
             Button(action: { bullet.toggle();
@@ -69,7 +69,7 @@ struct LeoToolbarSimple: View {
                 dash = false
                 number = false
             }) {
-                Text(". bullet").font(.caption).foregroundColor(color)
+                Text(". bullet").font(.caption).foregroundColor(bullet ? .red : color)
             }
             
             Button(action: { number.toggle();
@@ -77,7 +77,7 @@ struct LeoToolbarSimple: View {
                 dash = false
                 bullet = false
             }) {
-                Text("1. number").font(.caption).foregroundColor(color)
+                Text("1. number").font(.caption).foregroundColor(number ? .red : color)
             }
             
         }.buttonStyle(GrayButtonStyle(w: 80, h: 20 + d/6))

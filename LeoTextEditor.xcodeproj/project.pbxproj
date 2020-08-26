@@ -1,0 +1,451 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C70DDAF524F371CA009E592C /* LICENSE.txt in Resources */ = {isa = PBXBuildFile; fileRef = C70DDADE24F371CA009E592C /* LICENSE.txt */; };
+		C70DDAF624F371CA009E592C /* readme.md in Resources */ = {isa = PBXBuildFile; fileRef = C70DDADF24F371CA009E592C /* readme.md */; };
+		C70DDAF724F371CA009E592C /* picture1.png in Resources */ = {isa = PBXBuildFile; fileRef = C70DDAE124F371CA009E592C /* picture1.png */; };
+		C70DDAF824F371CA009E592C /* LeoTextEditor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C70DDAE424F371CA009E592C /* LeoTextEditor.swift */; };
+		C70DDAF924F371CA009E592C /* LeoExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C70DDAE524F371CA009E592C /* LeoExtension.swift */; };
+		C70DDAFA24F371CA009E592C /* LeoToolbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = C70DDAE624F371CA009E592C /* LeoToolbar.swift */; };
+		C70DDAFB24F371CA009E592C /* LeoFontSelector.swift in Sources */ = {isa = PBXBuildFile; fileRef = C70DDAE724F371CA009E592C /* LeoFontSelector.swift */; };
+		C70DDAFC24F371CA009E592C /* LeoEditorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C70DDAE824F371CA009E592C /* LeoEditorView.swift */; };
+		C70DDAFD24F371CA009E592C /* LEOTextStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C70DDAEB24F371CA009E592C /* LEOTextStorage.swift */; };
+		C70DDB0024F371CA009E592C /* LEOTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C70DDAEE24F371CA009E592C /* LEOTextView.swift */; };
+		C70DDB0224F371CA009E592C /* LEOTextViewStructs.swift in Sources */ = {isa = PBXBuildFile; fileRef = C70DDAF024F371CA009E592C /* LEOTextViewStructs.swift */; };
+		C70DDB0324F371CA009E592C /* LEOTextView+UITextViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C70DDAF124F371CA009E592C /* LEOTextView+UITextViewDelegate.swift */; };
+		C70DDB0424F371CA009E592C /* LEOTextUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = C70DDAF224F371CA009E592C /* LEOTextUtil.swift */; };
+		C70DDB0524F371CA009E592C /* NSAttributedString+SafeReplace.swift in Sources */ = {isa = PBXBuildFile; fileRef = C70DDAF324F371CA009E592C /* NSAttributedString+SafeReplace.swift */; };
+		C71680A424F54394009D5814 /* LeoToolbarSimple.swift in Sources */ = {isa = PBXBuildFile; fileRef = C71680A324F54394009D5814 /* LeoToolbarSimple.swift */; };
+		C76BC7C124F4F5EE001D98BB /* HighlightDropDown.swift in Sources */ = {isa = PBXBuildFile; fileRef = C76BC7C024F4F5EE001D98BB /* HighlightDropDown.swift */; };
+		C76BC7C324F4F801001D98BB /* FontDropDown.swift in Sources */ = {isa = PBXBuildFile; fileRef = C76BC7C224F4F801001D98BB /* FontDropDown.swift */; };
+		C7A0D14D24F37081000C7862 /* LeoTextEditorApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7A0D14C24F37081000C7862 /* LeoTextEditorApp.swift */; };
+		C7A0D14F24F37081000C7862 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7A0D14E24F37081000C7862 /* ContentView.swift */; };
+		C7A0D15124F37082000C7862 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C7A0D15024F37082000C7862 /* Assets.xcassets */; };
+		C7A0D15424F37082000C7862 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C7A0D15324F37082000C7862 /* Preview Assets.xcassets */; };
+		C7B65F6324F4D60F0055F502 /* TextFormatDropDown.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7B65F6224F4D60F0055F502 /* TextFormatDropDown.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		C70A77D824F5D36A00FEB436 /* LeoTextEditor.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = LeoTextEditor.entitlements; sourceTree = "<group>"; };
+		C70DDADE24F371CA009E592C /* LICENSE.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE.txt; sourceTree = "<group>"; };
+		C70DDADF24F371CA009E592C /* readme.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = readme.md; sourceTree = "<group>"; };
+		C70DDAE124F371CA009E592C /* picture1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = picture1.png; sourceTree = "<group>"; };
+		C70DDAE424F371CA009E592C /* LeoTextEditor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LeoTextEditor.swift; sourceTree = "<group>"; };
+		C70DDAE524F371CA009E592C /* LeoExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LeoExtension.swift; sourceTree = "<group>"; };
+		C70DDAE624F371CA009E592C /* LeoToolbar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LeoToolbar.swift; sourceTree = "<group>"; };
+		C70DDAE724F371CA009E592C /* LeoFontSelector.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LeoFontSelector.swift; sourceTree = "<group>"; };
+		C70DDAE824F371CA009E592C /* LeoEditorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LeoEditorView.swift; sourceTree = "<group>"; };
+		C70DDAEB24F371CA009E592C /* LEOTextStorage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LEOTextStorage.swift; sourceTree = "<group>"; };
+		C70DDAEE24F371CA009E592C /* LEOTextView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LEOTextView.swift; sourceTree = "<group>"; };
+		C70DDAF024F371CA009E592C /* LEOTextViewStructs.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LEOTextViewStructs.swift; sourceTree = "<group>"; };
+		C70DDAF124F371CA009E592C /* LEOTextView+UITextViewDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "LEOTextView+UITextViewDelegate.swift"; sourceTree = "<group>"; };
+		C70DDAF224F371CA009E592C /* LEOTextUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LEOTextUtil.swift; sourceTree = "<group>"; };
+		C70DDAF324F371CA009E592C /* NSAttributedString+SafeReplace.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSAttributedString+SafeReplace.swift"; sourceTree = "<group>"; };
+		C71680A324F54394009D5814 /* LeoToolbarSimple.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeoToolbarSimple.swift; sourceTree = "<group>"; };
+		C76BC7C024F4F5EE001D98BB /* HighlightDropDown.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HighlightDropDown.swift; sourceTree = "<group>"; };
+		C76BC7C224F4F801001D98BB /* FontDropDown.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontDropDown.swift; sourceTree = "<group>"; };
+		C7A0D14924F37081000C7862 /* LeoTextEditor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LeoTextEditor.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C7A0D14C24F37081000C7862 /* LeoTextEditorApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeoTextEditorApp.swift; sourceTree = "<group>"; };
+		C7A0D14E24F37081000C7862 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		C7A0D15024F37082000C7862 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C7A0D15324F37082000C7862 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		C7A0D15524F37082000C7862 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C7B65F6224F4D60F0055F502 /* TextFormatDropDown.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFormatDropDown.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C7A0D14624F37081000C7862 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C70DDAE024F371CA009E592C /* images */ = {
+			isa = PBXGroup;
+			children = (
+				C70DDAE124F371CA009E592C /* picture1.png */,
+			);
+			path = images;
+			sourceTree = "<group>";
+		};
+		C70DDAE224F371CA009E592C /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				C70DDAE324F371CA009E592C /* LeoTextEditor */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		C70DDAE324F371CA009E592C /* LeoTextEditor */ = {
+			isa = PBXGroup;
+			children = (
+				C70DDAE924F371CA009E592C /* LEOTextView */,
+				C70DDAE424F371CA009E592C /* LeoTextEditor.swift */,
+				C70DDAE524F371CA009E592C /* LeoExtension.swift */,
+				C70DDAE624F371CA009E592C /* LeoToolbar.swift */,
+				C70DDAE724F371CA009E592C /* LeoFontSelector.swift */,
+				C70DDAE824F371CA009E592C /* LeoEditorView.swift */,
+				C7B65F6224F4D60F0055F502 /* TextFormatDropDown.swift */,
+				C76BC7C024F4F5EE001D98BB /* HighlightDropDown.swift */,
+				C76BC7C224F4F801001D98BB /* FontDropDown.swift */,
+				C71680A324F54394009D5814 /* LeoToolbarSimple.swift */,
+			);
+			path = LeoTextEditor;
+			sourceTree = "<group>";
+		};
+		C70DDAE924F371CA009E592C /* LEOTextView */ = {
+			isa = PBXGroup;
+			children = (
+				C70DDAEA24F371CA009E592C /* Classes */,
+			);
+			path = LEOTextView;
+			sourceTree = "<group>";
+		};
+		C70DDAEA24F371CA009E592C /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				C70DDAEB24F371CA009E592C /* LEOTextStorage.swift */,
+				C70DDAEE24F371CA009E592C /* LEOTextView.swift */,
+				C70DDAF024F371CA009E592C /* LEOTextViewStructs.swift */,
+				C70DDAF124F371CA009E592C /* LEOTextView+UITextViewDelegate.swift */,
+				C70DDAF224F371CA009E592C /* LEOTextUtil.swift */,
+				C70DDAF324F371CA009E592C /* NSAttributedString+SafeReplace.swift */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		C7A0D14024F37081000C7862 = {
+			isa = PBXGroup;
+			children = (
+				C70DDAE024F371CA009E592C /* images */,
+				C70DDADE24F371CA009E592C /* LICENSE.txt */,
+				C70DDADF24F371CA009E592C /* readme.md */,
+				C70DDAE224F371CA009E592C /* Sources */,
+				C7A0D14B24F37081000C7862 /* LeoTextEditor */,
+				C7A0D14A24F37081000C7862 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C7A0D14A24F37081000C7862 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C7A0D14924F37081000C7862 /* LeoTextEditor.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C7A0D14B24F37081000C7862 /* LeoTextEditor */ = {
+			isa = PBXGroup;
+			children = (
+				C70A77D824F5D36A00FEB436 /* LeoTextEditor.entitlements */,
+				C7A0D14C24F37081000C7862 /* LeoTextEditorApp.swift */,
+				C7A0D14E24F37081000C7862 /* ContentView.swift */,
+				C7A0D15024F37082000C7862 /* Assets.xcassets */,
+				C7A0D15524F37082000C7862 /* Info.plist */,
+				C7A0D15224F37082000C7862 /* Preview Content */,
+			);
+			path = LeoTextEditor;
+			sourceTree = "<group>";
+		};
+		C7A0D15224F37082000C7862 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				C7A0D15324F37082000C7862 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C7A0D14824F37081000C7862 /* LeoTextEditor */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C7A0D15824F37082000C7862 /* Build configuration list for PBXNativeTarget "LeoTextEditor" */;
+			buildPhases = (
+				C7A0D14524F37081000C7862 /* Sources */,
+				C7A0D14624F37081000C7862 /* Frameworks */,
+				C7A0D14724F37081000C7862 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LeoTextEditor;
+			productName = LeoTextEditor;
+			productReference = C7A0D14924F37081000C7862 /* LeoTextEditor.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C7A0D14124F37081000C7862 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1200;
+				LastUpgradeCheck = 1200;
+				TargetAttributes = {
+					C7A0D14824F37081000C7862 = {
+						CreatedOnToolsVersion = 12.0;
+					};
+				};
+			};
+			buildConfigurationList = C7A0D14424F37081000C7862 /* Build configuration list for PBXProject "LeoTextEditor" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C7A0D14024F37081000C7862;
+			productRefGroup = C7A0D14A24F37081000C7862 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C7A0D14824F37081000C7862 /* LeoTextEditor */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C7A0D14724F37081000C7862 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C70DDAF524F371CA009E592C /* LICENSE.txt in Resources */,
+				C7A0D15424F37082000C7862 /* Preview Assets.xcassets in Resources */,
+				C70DDAF624F371CA009E592C /* readme.md in Resources */,
+				C7A0D15124F37082000C7862 /* Assets.xcassets in Resources */,
+				C70DDAF724F371CA009E592C /* picture1.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C7A0D14524F37081000C7862 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C7A0D14F24F37081000C7862 /* ContentView.swift in Sources */,
+				C70DDB0024F371CA009E592C /* LEOTextView.swift in Sources */,
+				C70DDAFD24F371CA009E592C /* LEOTextStorage.swift in Sources */,
+				C70DDB0524F371CA009E592C /* NSAttributedString+SafeReplace.swift in Sources */,
+				C71680A424F54394009D5814 /* LeoToolbarSimple.swift in Sources */,
+				C7B65F6324F4D60F0055F502 /* TextFormatDropDown.swift in Sources */,
+				C70DDAFA24F371CA009E592C /* LeoToolbar.swift in Sources */,
+				C76BC7C124F4F5EE001D98BB /* HighlightDropDown.swift in Sources */,
+				C70DDAFB24F371CA009E592C /* LeoFontSelector.swift in Sources */,
+				C70DDB0324F371CA009E592C /* LEOTextView+UITextViewDelegate.swift in Sources */,
+				C70DDAFC24F371CA009E592C /* LeoEditorView.swift in Sources */,
+				C70DDAF824F371CA009E592C /* LeoTextEditor.swift in Sources */,
+				C70DDAF924F371CA009E592C /* LeoExtension.swift in Sources */,
+				C70DDB0424F371CA009E592C /* LEOTextUtil.swift in Sources */,
+				C7A0D14D24F37081000C7862 /* LeoTextEditorApp.swift in Sources */,
+				C70DDB0224F371CA009E592C /* LEOTextViewStructs.swift in Sources */,
+				C76BC7C324F4F801001D98BB /* FontDropDown.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		C7A0D15624F37082000C7862 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C7A0D15724F37082000C7862 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C7A0D15924F37082000C7862 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = LeoTextEditor/LeoTextEditor.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"LeoTextEditor/Preview Content\"";
+				DEVELOPMENT_TEAM = N7KF5K7NET;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = LeoTextEditor/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ringo.leoreloaded.com.LeoTextEditor;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C7A0D15A24F37082000C7862 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = LeoTextEditor/LeoTextEditor.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"LeoTextEditor/Preview Content\"";
+				DEVELOPMENT_TEAM = N7KF5K7NET;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = LeoTextEditor/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ringo.leoreloaded.com.LeoTextEditor;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C7A0D14424F37081000C7862 /* Build configuration list for PBXProject "LeoTextEditor" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C7A0D15624F37082000C7862 /* Debug */,
+				C7A0D15724F37082000C7862 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C7A0D15824F37082000C7862 /* Build configuration list for PBXNativeTarget "LeoTextEditor" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C7A0D15924F37082000C7862 /* Debug */,
+				C7A0D15A24F37082000C7862 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C7A0D14124F37081000C7862 /* Project object */;
+}

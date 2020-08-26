@@ -1,0 +1,46 @@
+//
+//  FontDropDown.swift
+//  LeoTextEditor
+//
+//  Created by Ringo Wathelet on 2020/08/25.
+//
+
+import SwiftUI
+
+
+struct FontDropDown: View {
+    
+    var editor: LEOTextView
+    
+    // button size
+    let sx = CGFloat(20)
+    // button color
+    let color = Color.blue
+    
+    @State var expand = false
+    
+    @State private var highColor = Color.clear
+    
+
+    var body: some View {
+        Group {
+            Button(action: { self.expand.toggle() }) {
+                Image(systemName: "f.cursive").resizable().frame(width: sx, height: sx).foregroundColor(color)
+            }.buttonStyle(GrayButtonStyle(w: sx+5, h: sx+5))
+            
+            GeometryReader { geo in
+                if expand {
+                    LeoFontSelector(editor: editor)
+                        .frame(width: 280, height: 160)
+                        .buttonStyle(GrayButtonStyle(w: sx+5, h: sx+5))
+                        .padding(.top, 10)
+                        .background(RoundedRectangle(cornerRadius: 8)
+                                        .stroke(lineWidth: 1)
+                                        .background(Color(UIColor.systemGray6))
+                                        .padding(2))
+                } 
+            }
+        }
+    }
+    
+}

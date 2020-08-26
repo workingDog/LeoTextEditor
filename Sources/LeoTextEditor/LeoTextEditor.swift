@@ -15,7 +15,7 @@ struct LeoTextEditor: View {
     let height: CGFloat
     
     // true for a simple toolbar, false for a more advanced toolbar
-    let simple = true
+    var simple = true
     
     let sx = CGFloat(20)
     // adjusting for iPhone and iPad/mac
@@ -31,11 +31,12 @@ struct LeoTextEditor: View {
     @State private var keyboardOn = false
     
     
-    init(text: Binding<String>, withToolbar: Bool = true, width: CGFloat, height: CGFloat) {
+    init(text: Binding<String>, withToolbar: Bool = true, width: CGFloat, height: CGFloat, simple: Bool = true) {
         self._text = text
         self.withToolbar = withToolbar
         self.width = width
         self.height = height
+        self.simple = simple
     }
     
     var body: some View {

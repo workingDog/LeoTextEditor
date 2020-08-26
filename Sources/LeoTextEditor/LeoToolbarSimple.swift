@@ -15,7 +15,7 @@ struct LeoToolbarSimple: View {
     let sx = CGFloat(20)
     // button color
     let color = Color.blue
-    let d = LeoToolbar.isPhone ? CGFloat(0) : CGFloat(60)
+    let d = LeoToolbar.isPhone ? CGFloat(0) : CGFloat(150)
     
     @State private var txtColor = Color.black
     @State private var highColor = Color.clear
@@ -49,39 +49,36 @@ struct LeoToolbarSimple: View {
                 textColorButton
                 highlighter
             }.buttonStyle(GrayButtonStyle(w: sx+5, h: sx+5))
-            
-        }.frame(width: 400 + d, height: 80 + d/2)
+        }.frame(width: 350 + d, height: 65)
     }
     
     var textFormats: some View {
-        VStack (spacing: 2) {
-            
+        Group {
             Button(action: { dash.toggle();
                 editor.doFormatButtonAction(.dashedList)
                 bullet = false
                 number = false
             }) {
-                Text("- dash").font(.caption).foregroundColor(dash ? .red : color)
+                Image(systemName: "list.dash").resizable().frame(width: sx, height: sx)
+                    .foregroundColor(dash ? .red : color)
             }
-            
             Button(action: { bullet.toggle();
                 editor.doFormatButtonAction(.bulletedList)
                 dash = false
                 number = false
             }) {
-                Text(". bullet").font(.caption).foregroundColor(bullet ? .red : color)
+                Image(systemName: "list.bullet").resizable().frame(width: sx, height: sx)
+                    .foregroundColor(bullet ? .red : color)
             }
-            
             Button(action: { number.toggle();
                 editor.doFormatButtonAction(.numberedList)
                 dash = false
                 bullet = false
             }) {
-                Text("1. number").font(.caption).foregroundColor(number ? .red : color)
+                Image(systemName: "list.number").resizable().frame(width: sx, height: sx)
+                    .foregroundColor(number ? .red : color)
             }
-            
-        }.buttonStyle(GrayButtonStyle(w: 80, h: 20 + d/6))
-        .padding(.top, 5)
+        }
     }
     
     var textColorButton: some View {
@@ -115,7 +112,7 @@ struct LeoToolbarSimple: View {
                 }
             )).labelsHidden()
             Text("Highlight").font(.caption).foregroundColor(.black)
-        }
+        }.frame(width: 80)
     }
     
 }

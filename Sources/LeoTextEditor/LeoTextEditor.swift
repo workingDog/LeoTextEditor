@@ -9,6 +9,11 @@
 import SwiftUI
 
 
+class SelectionObserver: ObservableObject {
+    @Published var selection: Int = 0
+}
+
+
 struct LeoTextEditor: View {
     
     let width: CGFloat
@@ -16,6 +21,8 @@ struct LeoTextEditor: View {
     
     // true for a simple toolbar, false for a more advanced toolbar
     var simple = true
+    
+    var selection = SelectionObserver()
     
     let sx = CGFloat(20)
     // adjusting for iPhone and iPad/mac
@@ -29,6 +36,8 @@ struct LeoTextEditor: View {
     var withToolbar = true
     // control keyboard display, internal use
     @State private var keyboardOn = false
+    // dropdown button selection, so we can disable the others
+    @State var selections: [Bool] = [Bool](repeating: true, count: 3)
     
     
     init(text: Binding<String>, withToolbar: Bool = true, width: CGFloat, height: CGFloat, simple: Bool = true) {
@@ -58,7 +67,7 @@ struct LeoTextEditor: View {
             }.onAppear(perform: loadData)
             .padding(5)
     }
-    
+
     var withAdvancedToolbar: some View {
         ZStack {
             VStack (alignment: .leading) {
@@ -70,15 +79,27 @@ struct LeoTextEditor: View {
                         LeoToolbar(editor: editor).zIndex(3)
                             .overlay(
                                 VStack {
-                                    FontDropDown(editor: editor).zIndex(4).padding(.top, 10)
+                                    FontDropDown(editor: editor,
+                                                 onSelection: {self.doSelect(0)},
+                                                 onDeselection: {self.doUnSelect(0)})
+                                        .zIndex(4).padding(.top, 10)
+                                        .disabled(!selections[0])
                                 }.position(x: 250 + dx, y: dy), alignment: .trailing)
                             .overlay(
                                 VStack {
-                                    TextFormatDropDown(editor: editor).zIndex(4).padding(.top, 10)
+                                    TextFormatDropDown(editor: editor,
+                                                       onSelection: {self.doSelect(1)},
+                                                       onDeselection: {self.doUnSelect(1)})
+                                        .zIndex(4).padding(.top, 10)
+                                        .disabled(!selections[1])
                                 }.position(x: 290 + dx, y: dy), alignment: .trailing)
                             .overlay(
                                 VStack {
-                                    HighlightDropDown(editor: editor).zIndex(4).padding(.top, 10)
+                                    HighlightDropDown(editor: editor,
+                                                      onSelection: {self.doSelect(2)},
+                                                      onDeselection: {self.doUnSelect(2)})
+                                        .zIndex(4).padding(.top, 10)
+                                        .disabled(!selections[2])
                                 }.position(x: 330 + dx, y: dy), alignment: .trailing)
                     }
                 }.frame(height: 45).zIndex(2)
@@ -104,5 +125,14 @@ struct LeoTextEditor: View {
     func showKeyboard() {
         keyboardOn.toggle()
         let _ = keyboardOn ? editor.becomeFirstResponder() : editor.resignFirstResponder()
+    }
+    
+    func doSelect(_ ndx: Int) {
+        self.selections = self.selections.map { _ in false }
+        self.selections[ndx] = true
+    }
+    
+    func doUnSelect(_ ndx: Int) {
+        self.selections = self.selections.map { _ in true }
     }
 }

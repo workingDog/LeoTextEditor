@@ -23,9 +23,22 @@ struct TextFormatDropDown: View {
     @State var bullet = false
     @State var number = false
     
+    let onSelection: () -> Void      // action when selected
+    let onDeselection: () -> Void    // action when deselected
+    
+    init(editor: LEOTextView, onSelection: @escaping () -> Void, onDeselection: @escaping () -> Void) {
+        self.editor = editor
+        self.onSelection = onSelection
+        self.onDeselection = onDeselection
+    }
+    
     var body: some View {
         Group {
-            Button(action: { self.expand.toggle() }) {
+            Button(action: {
+                expand.toggle()
+                if expand {onSelection()}
+                if !expand {onDeselection()}
+            }) {
                 Image(systemName: "textformat").resizable().frame(width: sx, height: sx).foregroundColor(color)
             }.buttonStyle(GrayButtonStyle(w: sx+5, h: sx+5))
             

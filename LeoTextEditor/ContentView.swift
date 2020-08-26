@@ -27,7 +27,7 @@ struct ContentView: View {
     var body: some View {
         VStack {
             Spacer()
-            LeoTextEditor(text: $text, width: w, height: h)
+            LeoTextEditor(text: $text, width: w, height: h, simple: false)
                 .frame(width: w, height: h)
                 .background(RoundedRectangle(cornerRadius: 7)
                                 .stroke(lineWidth: 1)

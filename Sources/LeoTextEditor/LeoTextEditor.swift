@@ -55,7 +55,7 @@ struct LeoTextEditor: View {
     var withSimpleToolbar: some View {
             VStack (alignment: .leading) {
                 if withToolbar {
-                    LeoToolbarSimple(editor: editor)
+                    LeoToolbarSimple(editor: editor).padding(5)
                 }
                 Divider().padding(.horizontal, 10)
                 ScrollView {

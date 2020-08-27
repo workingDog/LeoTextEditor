@@ -39,7 +39,7 @@ struct LeoEditorView: UIViewRepresentable {
         }
         
         public func textViewDidChange(_ textView: UITextView) {
-            parent.text = parent.editor.textAttributesJSON() 
+            parent.text = parent.editor.textAttributesJSON()
         }
         
         public func textViewDidEndEditing(_ textView: UITextView) {

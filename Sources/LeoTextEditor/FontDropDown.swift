@@ -54,7 +54,7 @@ struct FontDropDown: View {
                                         .background(Color(UIColor.systemGray6))
                                         .padding(2))
                 } 
-            }
+            }.offset(x: -100, y: 0)
         }
     }
     

@@ -27,7 +27,7 @@ struct LeoToolbarSimple: View {
     static let isPhone = UIDevice.current.userInterfaceIdiom == .phone
     
     var body: some View {
-        ScrollView (.horizontal) {
+        ScrollView (.horizontal, showsIndicators: false) {
             HStack (spacing: LeoToolbar.isPhone ? 5 : 10) {
                 Spacer()
                 Button(action: { editor.clearButtonAction() }) {
@@ -49,7 +49,7 @@ struct LeoToolbarSimple: View {
                 textColorButton
                 highlighter
             }.buttonStyle(GrayButtonStyle(w: sx+5, h: sx+5))
-        }.frame(width: 350 + d)
+        }.frame(width: 350 + d, height: 60)
     }
     
     var textFormats: some View {

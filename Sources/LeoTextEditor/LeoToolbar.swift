@@ -25,29 +25,26 @@ struct LeoToolbar: View {
     static let isPhone = UIDevice.current.userInterfaceIdiom == .phone
     
     var body: some View {
-        ScrollView (.horizontal) {
-            HStack (spacing: LeoToolbar.isPhone ? 5 : 10) {
-                Spacer()
-                Button(action: { editor.clearButtonAction() }) {
-                    Image(systemName: "flame").resizable().frame(width: sx, height: sx).foregroundColor(.pink)
-                }
-                textColorButton
-                Button(action: { editor.boldButtonAction() }) {
-                    Image(systemName: "bold").resizable().frame(width: sx, height: sx).foregroundColor(color)
-                }
-                Button(action: { editor.italicButtonAction() }) {
-                    Image(systemName: "italic").resizable().frame(width: sx, height: sx).foregroundColor(color)
-                }
-                Button(action: { editor.strikeButtonAction() }) {
-                    Image(systemName: "strikethrough").resizable().frame(width: sx, height: sx).foregroundColor(color)
-                }
-                Button(action: { editor.underlineButtonAction() }) {
-                    Image(systemName: "underline").resizable().frame(width: sx, height: sx).foregroundColor(color)
-                }
-            }.buttonStyle(GrayButtonStyle(w: sx+5, h: sx+5))
-            .frame(width: LeoToolbar.isPhone ? 220 : 250)
-            
-        }.frame(width: LeoToolbar.isPhone ? 350 : 400)
+        HStack (spacing: LeoToolbar.isPhone ? 5 : 10) {
+            Spacer()
+            Button(action: { editor.clearButtonAction() }) {
+                Image(systemName: "flame").resizable().frame(width: sx, height: sx).foregroundColor(.pink)
+            }
+            textColorButton
+            Button(action: { editor.boldButtonAction() }) {
+                Image(systemName: "bold").resizable().frame(width: sx, height: sx).foregroundColor(color)
+            }
+            Button(action: { editor.italicButtonAction() }) {
+                Image(systemName: "italic").resizable().frame(width: sx, height: sx).foregroundColor(color)
+            }
+            Button(action: { editor.strikeButtonAction() }) {
+                Image(systemName: "strikethrough").resizable().frame(width: sx, height: sx).foregroundColor(color)
+            }
+            Button(action: { editor.underlineButtonAction() }) {
+                Image(systemName: "underline").resizable().frame(width: sx, height: sx).foregroundColor(color)
+            }
+        }.buttonStyle(GrayButtonStyle(w: sx+5, h: sx+5))
+        .frame(width: LeoToolbar.isPhone ? 220 : 250)
     }
     
     var textColorButton: some View {

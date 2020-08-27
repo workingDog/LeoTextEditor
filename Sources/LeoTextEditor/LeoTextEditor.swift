@@ -76,13 +76,13 @@ struct LeoTextEditor: View {
                         let geoPoint = geo.frame(in: .local).origin
                         let dy = geoPoint.y + sx
                         let dx = geoPoint.x + d
-                        LeoToolbar(editor: editor).zIndex(3)
+                        LeoToolbar(editor: editor).zIndex(3).padding(.top, 5)
                             .overlay(
                                 VStack {
                                     FontDropDown(editor: editor,
                                                  onSelection: {self.doSelect(0)},
                                                  onDeselection: {self.doUnSelect(0)})
-                                        .zIndex(4).padding(.top, 10)
+                                        .zIndex(4)
                                         .disabled(!selections[0])
                                 }.position(x: 250 + dx, y: dy), alignment: .trailing)
                             .overlay(
@@ -90,7 +90,7 @@ struct LeoTextEditor: View {
                                     TextFormatDropDown(editor: editor,
                                                        onSelection: {self.doSelect(1)},
                                                        onDeselection: {self.doUnSelect(1)})
-                                        .zIndex(4).padding(.top, 10)
+                                        .zIndex(4)
                                         .disabled(!selections[1])
                                 }.position(x: 290 + dx, y: dy), alignment: .trailing)
                             .overlay(
@@ -98,7 +98,7 @@ struct LeoTextEditor: View {
                                     HighlightDropDown(editor: editor,
                                                       onSelection: {self.doSelect(2)},
                                                       onDeselection: {self.doUnSelect(2)})
-                                        .zIndex(4).padding(.top, 10)
+                                        .zIndex(4)
                                         .disabled(!selections[2])
                                 }.position(x: 330 + dx, y: dy), alignment: .trailing)
                     }

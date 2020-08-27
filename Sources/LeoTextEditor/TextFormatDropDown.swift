@@ -42,6 +42,7 @@ struct TextFormatDropDown: View {
                 Image(systemName: "textformat").resizable().frame(width: sx, height: sx)
                     .foregroundColor(expand ? .red : color)
             }.buttonStyle(GrayButtonStyle(w: sx+5, h: sx+5))
+            .padding(.top, 10)
             
             GeometryReader { geo in
                 if expand {
